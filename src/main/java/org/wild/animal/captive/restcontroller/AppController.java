@@ -1,17 +1,17 @@
 package org.wild.animal.captive.restcontroller;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
+@RequestMapping("/ui")
 public class AppController {
 	
-	@GetMapping("/test")
-	public ResponseEntity<String> testMethod() {
-		// TODO Auto-generated method stub
-		return new ResponseEntity<>("Success!!", HttpStatus.OK);
+	@GetMapping("/")
+	public String home() {
+		return "welcome";
 	}
+	
 
 }
