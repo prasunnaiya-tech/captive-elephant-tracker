@@ -21,6 +21,7 @@ public class ElephantDetails {
 	private int areaRange;
 	private String currentGPSLocation;
 	private String registeredGPSLocation;
+	private String ipAddress;
 	
 	public ElephantDetails() {
 		super();
@@ -28,7 +29,7 @@ public class ElephantDetails {
 	
 	public ElephantDetails(long elephantId, String elephantName, String path, Timestamp date, String createdBy,
 			String lastUpdatedBy, Timestamp lastUpdatedDate, int areaRange, String currentGPSLocation,
-			String registeredGPSLocation) {
+			String registeredGPSLocation,String ipAddress) {
 		super();
 		this.elephantId = elephantId;
 		this.elephantName = elephantName;
@@ -161,4 +162,14 @@ public class ElephantDetails {
 	public void setRegisteredGPSLocation(String registeredGPSLocation) {
 		this.registeredGPSLocation = registeredGPSLocation;
 	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
+	}
+	
+	
 	}

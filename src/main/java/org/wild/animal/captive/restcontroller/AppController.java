@@ -13,5 +13,8 @@ public class AppController {
 		return "welcome";
 	}
 	
-
+	@GetMapping("/geoLocationTrack")
+	public String geoPage() {
+		return "geolocationtrack";
+	}
 }
